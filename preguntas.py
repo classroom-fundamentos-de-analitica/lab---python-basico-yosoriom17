@@ -16,7 +16,6 @@ def pregunta_01():
     """
     archivo = open("data.csv")
     text = archivo.read().split("\n")
-    archivo.close()
     secColum = [int(linea.split("\t")[1]) for linea in text if linea != '']
     return sum(secColum)
 
